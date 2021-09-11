@@ -1,1 +1,0 @@
-# mini-ats-discovery-service
