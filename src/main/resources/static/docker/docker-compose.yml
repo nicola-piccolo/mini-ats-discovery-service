@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  discovery-service:
+    image: miniats/discovery-service:latest
+    ports: 
+      - 8761:8761
+    volumes:
+      - /tmp:/home/discovery-service/logs
+    env_file:
+      - ./.discovery-env
+    networks: 
+      - global-network
+networks:
+  global-network:
+    external:
+      name: mini-ats-network
