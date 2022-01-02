@@ -14,4 +14,4 @@ logging:
   file:
     name: /home/discovery-service/logs/DiscoveryService.log
   level:
-    root: WARN
+    root: INFO
